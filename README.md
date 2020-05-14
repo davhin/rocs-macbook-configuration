@@ -1,12 +1,8 @@
 # Personal computer configuration.
 
-This is the idalab MacBook configuration. We use this process to set up our work machines for development, now you can use it too.
+This is the ROCS MacBook configuration.
 
-### Acknowledgements
-
-None of this would exist without Noa Shinitski (https://github.com/noashin) and Daniel Kirsch (https://github.com/kirel)
-
-### Set up
+## Set up
 
 Clone the repository to your computer, copy and pasting its link (above):
 
@@ -34,7 +30,7 @@ To clarify using a short example: The role 'common' in local.yml is meant to ref
 After you start ansible-playbook it will install all roles defined in local.yml according to each roles specific main.yml file.
 
 
-### Testing and development - Using Vagrant to configure and run a virtual machine:
+## Development section (not needed for setup up your PC)
 
 You only need to read this if you want to test and/or develop this process in a virtual machine.
 
