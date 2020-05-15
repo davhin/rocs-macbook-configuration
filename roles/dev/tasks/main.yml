@@ -19,19 +19,13 @@
 
 - name: Add development desktop tools
   homebrew_cask:
-    name: [sequel-pro, iterm2, atom]
+    name: [iterm2, atom]
   when: ansible_os_family == 'Darwin'
   tags: dev
 
 - name: Virtualization for dev
   homebrew_cask:
     name: [docker]
-  when: ansible_os_family == 'Darwin'
-  tags: dev
-
-- name: Cloud cli
-  homebrew_cask:
-    name: [google-cloud-sdk]
   when: ansible_os_family == 'Darwin'
   tags: dev
 
