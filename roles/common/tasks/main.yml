@@ -4,7 +4,7 @@
     name: [google-chrome, firefox]
   when: ansible_os_family == 'Darwin'
   tags: common
-  ignore_errors: yes 
+  ignore_errors: yes
 
 - name: Add desktop utility tools
   homebrew_cask:
@@ -14,6 +14,6 @@
 
 - name: Add general desktop tools
   homebrew_cask:
-    name: [slack, microsoft-office, sequel-pro, openvpn]
+    name: [slack, microsoft-office, sequel-pro, openvpn-connect]
   when: ansible_os_family == 'Darwin'
   tags: common
