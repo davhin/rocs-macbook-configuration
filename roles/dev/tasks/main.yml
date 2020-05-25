@@ -5,9 +5,9 @@
   when: ansible_os_family == 'Darwin'
   tags: dev
 
-- name: Install Anaconda
-  homebrew_cask:
-    name: [anaconda]
+- name: Install Node
+  homebrew:
+    name: [node]
   when: ansible_os_family == 'Darwin'
   tags: dev
 
